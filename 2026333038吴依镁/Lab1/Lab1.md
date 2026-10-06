@@ -299,24 +299,20 @@ cat hello.txt
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| VMware Tools 版本 |13.0.10.0 (build-25056151)
- |
+| VMware Tools 版本 |13.0.10.0 (build-25056151)| 
 | `open-vm-tools` 是否 active |是 |
 | 桌面分辨率是否能自动调整 |是 |
 | `gcc` 版本 |(Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0 |
-| `make` 版本 |GNU Make 4.3
- |
+| `make` 版本 |GNU Make 4.3| 
 | `gdb` 版本 |(Ubuntu 15.1-1ubuntu1~24.04.1) 15.1 |
 | `git` 版本 |2.43.0 |
-| `ssh -V` 的版本信息 |OpenSSH_9.6p1 Ubuntu-3ubuntu13.19, OpenSSL 3.0.13 30 Jan 2024
- |
+| `ssh -V` 的版本信息 |OpenSSH_9.6p1 Ubuntu-3ubuntu13.19, OpenSSL 3.0.13 30 Jan 2024| 
 | 22 端口是否处于监听 |是 |
 | `vim --version` 的版本信息 |VIM - Vi IMproved 9.1  |
 | `cat hello.txt` 的输出 |操作系统 Lab1 环境验收
 学号：2026333038
 姓名: 吴依镁
-本文件由本人在 Ubuntu 24.04 虚拟机中使用 vim 创建并保存。
- |
+本文件由本人在 Ubuntu 24.04 虚拟机中使用 vim 创建并保存| 
 | 软件是否全部安装合格 |是 |
 
 ![软件安装与 vim 写文件](imgs/lab1_toolchain.png)
