@@ -61,10 +61,10 @@ sudo cat /var/log/installer/media-info
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| Ubuntu 当前完整版本 | |
-| 安装介质的版本 | |
-| 处理器架构 | |
-| 是否为教师提供的 Ubuntu 24.04.4 LTS Desktop amd64 | |
+| Ubuntu 当前完整版本 | Ubuntu 24.04.4 LTS (Noble Numbat)|
+| 安装介质的版本 |Ubuntu 24.04.4 LTS "Noble Numbat" - Release amd64 (20260210) |
+| 处理器架构 |   x86_64  |
+| 是否为教师提供的 Ubuntu 24.04.4 LTS Desktop amd64 | 是|
 
 ![Ubuntu 版本](imgs/lab1_ubuntu_version.png)
 
@@ -122,13 +122,13 @@ sudo apt update
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| 虚拟机 IP 地址 | |
-| 网络模式 | NAT / 其他： |
-| ping `223.5.5.5` 是否成功 | |
-| ping `mirrors.tuna.tsinghua.edu.cn` 是否成功 | |
-| 软件源（官方源 / 已换的镜像站） | |
-| `sudo apt update` 是否成功 | |
-| 联网是否合格 | |
+| 虚拟机 IP 地址 |192.168.208.128 |
+| 网络模式 | NAT  |
+| ping `223.5.5.5` 是否成功 | 成功|
+| ping `mirrors.tuna.tsinghua.edu.cn` 是否成功 | 成功|
+| 软件源（官方源 / 已换的镜像站） |官方源 |
+| `sudo apt update` 是否成功 | 成功|
+| 联网是否合格 | 合格|
 
 ![虚拟机联网](imgs/lab1_network.png)
 
@@ -173,12 +173,12 @@ df -h /
 | 项目 | 你的填写内容 |
 | :--- | :--- |
 | 宿主机内存 / CPU 核心 / 存放盘剩余空间 | |
-| 选择的配置档位 | 最低可用档 / 课程推荐档 / 宽裕档 |
-| 虚拟 CPU 核心数 | |
-| 虚拟内存 | |
-| 虚磁盘容量 | |
-| 根分区可用空间 | |
-| 资源分配是否符合对应档位 | |
+| 选择的配置档位 |  课程推荐档 |
+| 虚拟 CPU 核心数 | 2|
+| 虚拟内存 |5.7Gi |
+| 虚磁盘容量 |40G |
+| 根分区可用空间 |28G |
+| 资源分配是否符合对应档位 |是|
 
 ![虚机资源](imgs/lab1_resources.png)
 
@@ -299,18 +299,21 @@ cat hello.txt
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| VMware Tools 版本 | |
-| `open-vm-tools` 是否 active | |
-| 桌面分辨率是否能自动调整 | |
-| `gcc` 版本 | |
-| `make` 版本 | |
-| `gdb` 版本 | |
-| `git` 版本 | |
-| `ssh -V` 的版本信息 | |
-| 22 端口是否处于监听 | |
-| `vim --version` 的版本信息 | |
-| `cat hello.txt` 的输出 | |
-| 软件是否全部安装合格 | |
+| VMware Tools 版本 |13.0.10.0(build-25056151) |
+| `open-vm-tools` 是否 active |是 |
+| 桌面分辨率是否能自动调整 |是 |
+| `gcc` 版本 | (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0|
+| `make` 版本 |GNU Make 4.3 |
+| `gdb` 版本 |(Ubuntu 15.0.50.20240403-0ubuntu1) 15.0.50.20240.403-git|
+| `git` 版本 | 2.43.0|
+| `ssh -V` 的版本信息 |OpenSSH_9.6p1 Ubuntu-3ubuntu13.19, OpenSSL 3.0.13 30 Jan 2024 |
+| 22 端口是否处于监听 |是 |
+| `vim --version` 的版本信息 | VIM - Vi IMproved 9.1|
+| `cat hello.txt` 的输出 |操作系统 Lab1 环境验收
+学号：2026333013
+姓名：陈金蓉
+本文件由本人在 Ubuntu 24.04 虚拟机中使用 vim 创建并保存 |
+| 软件是否全部安装合格 |是 |
 
 ![软件安装与 vim 写文件](imgs/lab1_toolchain.png)
 
@@ -332,7 +335,7 @@ cat hello.txt
 
 简要说明你遇到的问题、解决方法，以及当前环境是否可以继续完成后续实验：
 
-> 填写：
+> 填写：是
 
 ---
 
