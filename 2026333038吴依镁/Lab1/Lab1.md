@@ -61,13 +61,13 @@ sudo cat /var/log/installer/media-info
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| Ubuntu 当前完整版本 |Ubuntu 24.04.4 LTS |
-| 安装介质的版本 |Ubuntu 24.04.4 LTS |
-| 处理器架构 |x86_64
- |
+| Ubuntu 当前完整版本 |Ubuntu 24.04.5 LTS |
+| 安装介质的版本 |Ubuntu 24.04.5 LTS |
+| 处理器架构 |x86_64|
 | 是否为教师提供的 Ubuntu 24.04.4 LTS Desktop amd64 |是 |
 
 ![Ubuntu 版本](imgs/lab1_ubuntu_version.png)
+
 
 ---
 
@@ -123,7 +123,7 @@ sudo apt update
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| 虚拟机 IP 地址 |192.168.182.128 |
+| 虚拟机 IP 地址 |192.168.196.128 |
 | 网络模式 | NAT |
 | ping `223.5.5.5` 是否成功 |是 |
 | ping `mirrors.tuna.tsinghua.edu.cn` 是否成功 |是 |
@@ -173,15 +173,17 @@ df -h /
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| 宿主机内存 / CPU 核心 / 存放盘剩余空间 | 6 GB / 2 / 293 GB |
+| 宿主机内存 / CPU 核心 / 存放盘剩余空间 | 16GB / 88 / 502 GB |
 | 选择的配置档位 | 课程推荐档 |
-| 虚拟 CPU 核心数 |2 |
+| 虚拟 CPU 核心数 |4 |
 | 虚拟内存 |6 GB |
 | 虚磁盘容量 |40G |
-| 根分区可用空间 |26G |
+| 根分区可用空间 |27G |
 | 资源分配是否符合对应档位 |是 |
 
 ![虚机资源](imgs/lab1_resources.png)
+
+
 
 ---
 
@@ -314,13 +316,13 @@ cat hello.txt
 | 22 端口是否处于监听 |是 |
 | `vim --version` 的版本信息 |VIM - Vi IMproved 9.1  |
 | `cat hello.txt` 的输出 |操作系统 Lab1 环境验收
-学号：2026333039
-姓名: chengwenjie
-本文件由本人在 Ubuntu 24.04 虚拟机中使用 vim 创建并保存。
- |
-| 软件是否全部安装合格 | |
+学号：2026333038
+姓名: 吴依镁
+本文件由本人在 Ubuntu 24.04 虚拟机中使用 vim 创建并保存。|
+| 软件是否全部安装合格 | 是|
 
 ![软件安装与 vim 写文件](imgs/lab1_toolchain.png)
+
 
 ---
 
