@@ -63,8 +63,7 @@ sudo cat /var/log/installer/media-info
 | :--- | :--- |
 | Ubuntu 当前完整版本 |Ubuntu 24.04.4 LTS |
 | 安装介质的版本 |Ubuntu 24.04.4 LTS |
-| 处理器架构 |x86_64
- |
+| 处理器架构 |x86_64| 
 | 是否为教师提供的 Ubuntu 24.04.4 LTS Desktop amd64 |是 |
 
 ![Ubuntu 版本](imgs/lab1_ubuntu_version.png)
