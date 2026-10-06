@@ -314,11 +314,11 @@ cat hello.txt
 | 22 端口是否处于监听 |是 |
 | `vim --version` 的版本信息 |VIM - Vi IMproved 9.1  |
 | `cat hello.txt` 的输出 |操作系统 Lab1 环境验收
-学号：2026333039
-姓名: chengwenjie
+学号：2026333038
+姓名: 吴依镁
 本文件由本人在 Ubuntu 24.04 虚拟机中使用 vim 创建并保存。
  |
-| 软件是否全部安装合格 | |
+| 软件是否全部安装合格 |是 |
 
 ![软件安装与 vim 写文件](imgs/lab1_toolchain.png)
 
