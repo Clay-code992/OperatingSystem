@@ -61,9 +61,9 @@ sudo cat /var/log/installer/media-info
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| Ubuntu 当前完整版本 |Ubuntu24.04.4LTS |
-| 安装介质的版本 | |Ubuntu24.04.4 LTS
-| 处理器架构 |x86_64 |
+| Ubuntu 当前完整版本 | Ubuntu 24.04.4 LTS |
+| 安装介质的版本 | Ubuntu 24.04.4 LTS |
+| 处理器架构 | x86_64 |
 | 是否为教师提供的 Ubuntu 24.04.4 LTS Desktop amd64 |是 |
 
 ![Ubuntu 版本](imgs/lab1_ubuntu_version.png)
@@ -300,18 +300,18 @@ cat hello.txt
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| VMware Tools 版本 | |
-| `open-vm-tools` 是否 active | |
-| 桌面分辨率是否能自动调整 | |
-| `gcc` 版本 | |
-| `make` 版本 | |
-| `gdb` 版本 | |
-| `git` 版本 | |
-| `ssh -V` 的版本信息 | |
-| 22 端口是否处于监听 | |
-| `vim --version` 的版本信息 | |
-| `cat hello.txt` 的输出 | |
-| 软件是否全部安装合格 | |
+| VMware Tools 版本 | 13.0.10.0（build-25056151） |
+| `open-vm-tools` 是否 active |是 |
+| 桌面分辨率是否能自动调整 |是 |
+| `gcc` 版本 | gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0 |
+| `make` 版本 | GNU Make 4.3 |
+| `gdb` 版本 | GNU gdb (Ubuntu 15.0.50.20240403-0ubuntu1) 15.0.50.20240403-git |
+| `git` 版本 | git version 2.43.0 |
+| `ssh -V` 的版本信息 | OpenSSH_9.6p1 Ubuntu-3ubuntu13.19, OpenSSL 3.0.13 30 Jan 2024 |
+| 22 端口是否处于监听 |是 |
+| `vim --version` 的版本信息 | VIM - Vi IMproved 9.1 (2024 Jan 02, 编译于 Aug 24 2026 22:13:04) |
+| `cat hello.txt` 的输出 | Operating System Lab1 Environment Check Student ID:2026333006 Name:Nian jiangping This file is created and saved by myself using vim in Ubuntu 24.04 virtual machine |
+| 软件是否全部安装合格 |合格 |
 
 ![软件安装与 vim 写文件](imgs/lab1_toolchain.png)
 
@@ -321,19 +321,19 @@ cat hello.txt
 
 | 验收项目 | 合格标准 | 你的结论 |
 | :--- | :--- | :--- |
-| VMware 版本 | VMware Workstation Pro 26H1 for Windows | |
-| Linux 版本 | Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 | |
-| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 | |
-| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） | |
-| CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 | |
-| C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） | |
-| vim | `vim --version` 显示完整版，且能用它创建并保存 `hello.txt` | |
-| OpenSSH Server | `openssh-server` 已安装，`ssh -V` 有版本信息，22 端口处于监听 | |
-| VMware Tools | 软件包已安装，`open-vm-tools` 为 active，窗口缩放分辨率自动适配 | |
+| VMware 版本 | VMware Workstation Pro 26H1 for Windows | 合格（已安装 VMware Workstation Pro 26.0.0.25388281，与教师指定版本一致） |
+| Linux 版本 | Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 | 合格（Ubuntu 24.04.4 LTS，架构 x86_64，安装介质为教师镜像） |
+| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 | 合格（IP 192.168.130.128，NAT 模式，ping 223.5.5.5 与域名均成功，apt update 成功） |
+| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） | 合格（使用官方源，`sudo apt update` 成功） |
+| CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 | 合格（虚拟 CPU 2 核、虚拟内存 5.7GiB、虚磁盘 40GB，符合课程推荐档） |
+| C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） | 合格（gcc 13.3.0、make 4.3、gdb 15.0.50、git 2.43.0 均已安装并能输出版本信息） |
+| vim | `vim --version` 显示完整版，且能用它创建并保存 `hello.txt` | 合格（vim 9.1 完整版，已用其创建并保存 `hello.txt`） |
+| OpenSSH Server | `openssh-server` 已安装，`ssh -V` 有版本信息，22 端口处于监听 | 合格（openssh-server 已安装，`ssh -V` 为 OpenSSH_9.6p1，22 端口处于监听） |
+| VMware Tools | 软件包已安装，`open-vm-tools` 为 active，窗口缩放分辨率自动适配 | 合格（open-vm-tools 已安装且 active，VMware Tools 13.0.10.0，窗口缩放分辨率自动适配） |
 
 简要说明你遇到的问题、解决方法，以及当前环境是否可以继续完成后续实验：
 
-> 填写：
+> 填写：是
 
 ---
 
