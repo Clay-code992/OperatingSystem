@@ -122,9 +122,8 @@ sudo apt update
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| 虚拟机 IP 地址 |hostname -I
-192.168.130.128 |
-| 网络模式 |NAT|
+| 虚拟机 IP 地址 | 192.168.130.129 |
+| 网络模式 | NAT |
 | ping `223.5.5.5` 是否成功 |成功 |
 | ping `mirrors.tuna.tsinghua.edu.cn` 是否成功 |成功 |
 | 软件源（官方源 / 已换的镜像站） |官方源 |
@@ -277,8 +276,8 @@ vim hello.txt
 
 ```text
 操作系统 Lab1 环境验收
-学号：2026333001
-姓名：朱泽科
+学号：2026333006
+姓名：年江平
 本文件由本人在 Ubuntu 24.04 虚拟机中使用 vim 创建并保存。
 ```
 
@@ -323,7 +322,7 @@ cat hello.txt
 | :--- | :--- | :--- |
 | VMware 版本 | VMware Workstation Pro 26H1 for Windows | 合格（已安装 VMware Workstation Pro 26.0.0.25388281，与教师指定版本一致） |
 | Linux 版本 | Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 | 合格（Ubuntu 24.04.4 LTS，架构 x86_64，安装介质为教师镜像） |
-| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 | 合格（IP 192.168.130.128，NAT 模式，ping 223.5.5.5 与域名均成功，apt update 成功） |
+| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 | 合格（IP 192.168.130.129，NAT 模式，ping 223.5.5.5 与域名均成功，apt update 成功） |
 | 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） | 合格（使用官方源，`sudo apt update` 成功） |
 | CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 | 合格（虚拟 CPU 2 核、虚拟内存 5.7GiB、虚磁盘 40GB，符合课程推荐档） |
 | C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） | 合格（gcc 13.3.0、make 4.3、gdb 15.0.50、git 2.43.0 均已安装并能输出版本信息） |
