@@ -61,10 +61,11 @@ sudo cat /var/log/installer/media-info
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| Ubuntu 当前完整版本 | |
-| 安装介质的版本 | |
-| 处理器架构 | |
-| 是否为教师提供的 Ubuntu 24.04.4 LTS Desktop amd64 | |
+| Ubuntu 当前完整版本 |Ubuntu 24.04.4 LTS |
+| 安装介质的版本 24.04.4 LTS (Noble Numbat) |
+| 处理器架构 |x86_64
+ |
+| 是否为教师提供的 Ubuntu 24.04.4 LTS Desktop amd64 |是 |
 
 ![Ubuntu 版本](imgs/lab1_ubuntu_version.png)
 
@@ -122,13 +123,13 @@ sudo apt update
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| 虚拟机 IP 地址 | |
-| 网络模式 | NAT / 其他： |
-| ping `223.5.5.5` 是否成功 | |
+| 虚拟机 IP 地址 |192.168.189.128 |
+| 网络模式 | NAT |
+| ping `223.5.5.5` 是否成功 |是 |
 | ping `mirrors.tuna.tsinghua.edu.cn` 是否成功 | |
-| 软件源（官方源 / 已换的镜像站） | |
-| `sudo apt update` 是否成功 | |
-| 联网是否合格 | |
+| 软件源（官方源 / 已换的镜像站） |官方源 |
+| `sudo apt update` 是否成功 是| |
+| 联网是否合格 |是 |
 
 ![虚拟机联网](imgs/lab1_network.png)
 
@@ -172,13 +173,13 @@ df -h /
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| 宿主机内存 / CPU 核心 / 存放盘剩余空间 | |
-| 选择的配置档位 | 最低可用档 / 课程推荐档 / 宽裕档 |
-| 虚拟 CPU 核心数 | |
-| 虚拟内存 | |
-| 虚磁盘容量 | |
-| 根分区可用空间 | |
-| 资源分配是否符合对应档位 | |
+| 宿主机内存 / CPU 核心 / 存放盘剩余空间 |6GB / 2 / 273GB |
+| 选择的配置档位 | 课程推荐档 |
+| 虚拟 CPU 核心数 |2 |
+| 虚拟内存 |6G |
+| 虚磁盘容量 |40G |
+| 根分区可用空间 |27G |
+| 资源分配是否符合对应档位 |是 |
 
 ![虚机资源](imgs/lab1_resources.png)
 
@@ -299,18 +300,21 @@ cat hello.txt
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| VMware Tools 版本 | |
-| `open-vm-tools` 是否 active | |
+| VMware Tools 版本 |build-essential	12.10ubuntu1 |
+| `open-vm-tools` 是否 active |git version 2.43.0 |
 | 桌面分辨率是否能自动调整 | |
-| `gcc` 版本 | |
-| `make` 版本 | |
-| `gdb` 版本 | |
-| `git` 版本 | |
-| `ssh -V` 的版本信息 | |
-| 22 端口是否处于监听 | |
-| `vim --version` 的版本信息 | |
-| `cat hello.txt` 的输出 | |
-| 软件是否全部安装合格 | |
+| `gcc` 版本 |(Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0 |
+| `make` 版本 |GNU Make 4.3 |
+| `gdb` 版本 |GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1 |
+| `git` 版本 |git version 2.43.0 |
+| `ssh -V` 的版本信息 |OpenSSH_9.6p1 Ubuntu-3ubuntu13.19, OpenSSL 3.0.13 30 Jan 2024 |
+| 22 端口是否处于监听 |是 |
+| `vim --version` 的版本信息 |2:9.1.0016-1ubuntu7.20 |
+| `cat hello.txt` 的输出 |操作系统 Lab1 环境验收
+学号：2026333029
+姓名：sunjianjie
+本文件由本人在 Ubuntu 24.04 虚拟机中使用 vim 创建并保存。 |
+| 软件是否全部安装合格 |是 |
 
 ![软件安装与 vim 写文件](imgs/lab1_toolchain.png)
 
@@ -320,15 +324,15 @@ cat hello.txt
 
 | 验收项目 | 合格标准 | 你的结论 |
 | :--- | :--- | :--- |
-| VMware 版本 | VMware Workstation Pro 26H1 for Windows | |
-| Linux 版本 | Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 | |
-| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 | |
-| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） | |
-| CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 | |
-| C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） | |
-| vim | `vim --version` 显示完整版，且能用它创建并保存 `hello.txt` | |
-| OpenSSH Server | `openssh-server` 已安装，`ssh -V` 有版本信息，22 端口处于监听 | |
-| VMware Tools | 软件包已安装，`open-vm-tools` 为 active，窗口缩放分辨率自动适配 | |
+| VMware 版本 | VMware Workstation Pro 26H1 for Windows |是 |
+| Linux 版本 | Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 |是 |
+| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 |正常 |
+| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） |成功 |
+| CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 |是 |
+| C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） |已安装 |
+| vim | `vim --version` 显示完整版，且能用它创建并保存 `hello.txt` |是 |
+| OpenSSH Server | `openssh-server` 已安装，`ssh -V` 有版本信息，22 端口处于监听 |是 |
+| VMware Tools | 软件包已安装，`open-vm-tools` 为 active，窗口缩放分辨率自动适配 |是 |
 
 简要说明你遇到的问题、解决方法，以及当前环境是否可以继续完成后续实验：
 
