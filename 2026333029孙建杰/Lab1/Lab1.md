@@ -28,7 +28,7 @@ VMware Workstation Pro 26H1 for Windows
 | 是否为教师指定版本 | 是|
 
 ![VMware 版本](imgs/lab1_vmware_version.png)
-![alt text]()
+
 ---
 
 ## 任务二：检查 Ubuntu 版本
@@ -62,7 +62,7 @@ sudo cat /var/log/installer/media-info
 | 项目 | 你的填写内容 |
 | :--- | :--- |
 | Ubuntu 当前完整版本 |Ubuntu 24.04.4 LTS |
-| 安装介质的版本 24.04.4 LTS (Noble Numbat) |
+| 安装介质的版本 |Ubuntu 24.04.4 LTS |
 | 处理器架构 |x86_64
  |
 | 是否为教师提供的 Ubuntu 24.04.4 LTS Desktop amd64 |是 |
@@ -126,9 +126,9 @@ sudo apt update
 | 虚拟机 IP 地址 |192.168.189.128 |
 | 网络模式 | NAT |
 | ping `223.5.5.5` 是否成功 |是 |
-| ping `mirrors.tuna.tsinghua.edu.cn` 是否成功 | |
+| ping `mirrors.tuna.tsinghua.edu.cn` 是否成功 |是 |
 | 软件源（官方源 / 已换的镜像站） |官方源 |
-| `sudo apt update` 是否成功 是| |
+| `sudo apt update` 是否成功 |是 |
 | 联网是否合格 |是 |
 
 ![虚拟机联网](imgs/lab1_network.png)
@@ -173,10 +173,10 @@ df -h /
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| 宿主机内存 / CPU 核心 / 存放盘剩余空间 |6GB / 2 / 273GB |
+| 宿主机内存 / CPU 核心 / 存放盘剩余空间 |16GB / 2 / 374GB |
 | 选择的配置档位 | 课程推荐档 |
 | 虚拟 CPU 核心数 |2 |
-| 虚拟内存 |6G |
+| 虚拟内存 |16G |
 | 虚磁盘容量 |40G |
 | 根分区可用空间 |27G |
 | 资源分配是否符合对应档位 |是 |
@@ -300,16 +300,17 @@ cat hello.txt
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| VMware Tools 版本 |build-essential	12.10ubuntu1 |
-| `open-vm-tools` 是否 active |git version 2.43.0 |
-| 桌面分辨率是否能自动调整 | |
+| VMware Tools 版本 |13.0.10.0 (build-25056151)
+ |
+| `open-vm-tools` 是否 active |是 |
+| 桌面分辨率是否能自动调整 |是 |
 | `gcc` 版本 |(Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0 |
 | `make` 版本 |GNU Make 4.3 |
 | `gdb` 版本 |GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1 |
-| `git` 版本 |git version 2.43.0 |
+| `git` 版本 | 2.43.0 |
 | `ssh -V` 的版本信息 |OpenSSH_9.6p1 Ubuntu-3ubuntu13.19, OpenSSL 3.0.13 30 Jan 2024 |
 | 22 端口是否处于监听 |是 |
-| `vim --version` 的版本信息 |2:9.1.0016-1ubuntu7.20 |
+| `vim --version` 的版本信息 |VIM - Vi IMproved 9.1  |
 | `cat hello.txt` 的输出 |操作系统 Lab1 环境验收
 学号：2026333029
 姓名：sunjianjie
