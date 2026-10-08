@@ -325,8 +325,8 @@ cat hello.txt
 | :--- | :--- | :--- |
 | VMware 版本 | VMware Workstation Pro 26H1 for Windows | VMware Workstation Pro 26H1 for Windows，合格 |
 | Linux 版本 | Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 | Ubuntu 24.04 LTS amd64，版本匹配，合格|
-| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 |可获取IP，外网访问正常，DNS解析正常，合格 |
-| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） |  apt update执行正常，无报错，国内清华镜像源，合格|
+| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 |可获取IP，外网访问正常，DNS域名解析失败，不合格 |
+| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） |  apt update执行失败，提示403Forbidden访问被拦截，不合格|
 | CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 | 分配2核CPU，4GB内存，40GB磁盘，资源满足，合格|
 | C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） |  gcc/make/gdb/git全部正常输出版本，合格|
 | vim | `vim --version` 显示完整版，且能用它创建并保存 `hello.txt` | vim版本正常，成功创建并保存hello.txt，合格|
