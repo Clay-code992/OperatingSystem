@@ -276,8 +276,8 @@ vim hello.txt
 
 ```text
 操作系统 Lab1 环境验收
-学号：2026333001
-姓名：朱泽科
+学号：2026333036
+姓名：张厚银
 本文件由本人在 Ubuntu 24.04 虚拟机中使用 vim 创建并保存。
 ```
 
@@ -309,9 +309,10 @@ cat hello.txt
 | `ssh -V` 的版本信息 |OpenSSH_9.6p1 Ubuntu-3ubuntu13.19, OpenSSL 3.0.13 30 Jan 2024 |
 | 22 端口是否处于监听 |是 |
 | `vim --version` 的版本信息 |VIM - Vi IMproveed 9.1 (2024 Jan 02,compiled Aug 24 2026 22:13:04) |
-| `cat hello.txt` 的输出 |cao zuo xi tong Lab1 huanjingyinshou
-xuehao；2026333036
-xingming：zhang hou yin |
+| `cat hello.txt` 的输出 |操作系统 Lab1 环境验收
+学号：2026333036
+姓名：张厚银
+本文件由本人在 Ubuntu 24.04 虚拟机中使用 vim 创建并保存。|
 | 软件是否全部安装合格 |是 |
 
 ![软件安装与 vim 写文件](imgs/lab1_toolchain.png)
@@ -322,19 +323,19 @@ xingming：zhang hou yin |
 
 | 验收项目 | 合格标准 | 你的结论 |
 | :--- | :--- | :--- |
-| VMware 版本 | VMware Workstation Pro 26H1 for Windows | |
-| Linux 版本 | Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 | |
-| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 | |
-| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） | |
-| CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 | |
-| C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） | |
-| vim | `vim --version` 显示完整版，且能用它创建并保存 `hello.txt` | |
-| OpenSSH Server | `openssh-server` 已安装，`ssh -V` 有版本信息，22 端口处于监听 | |
-| VMware Tools | 软件包已安装，`open-vm-tools` 为 active，窗口缩放分辨率自动适配 | |
+| VMware 版本 | VMware Workstation Pro 26H1 for Windows | 合格，已安装教师指定版本 |
+| Linux 版本 | Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 | 合格 |
+| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 | 合格，NAT 模式下网络正常 |
+| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） | 合格，使用清华镜像站更新成功 |
+| CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 | 合格，2 核 / 5.7GB 内存 / 60GB 磁盘 |
+| C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） | 合格 |
+| vim | `vim --version` 显示完整版，且能用它创建并保存 `hello.txt` | 合格，完整版 Vim 9.1 |
+| OpenSSH Server | `openssh-server` 已安装，`ssh -V` 有版本信息，22 端口处于监听 | 合格 |
+| VMware Tools | 软件包已安装，`open-vm-tools` 为 active，窗口缩放分辨率自动适配 | 合格 |
 
 简要说明你遇到的问题、解决方法，以及当前环境是否可以继续完成后续实验：
 
-> 填写：
+> 安装过程基本顺利，遇到的主要问题是初次配置时软件源下载较慢，更换为清华镜像站后 `sudo apt update` 正常完成。其余 VMware、Ubuntu 24.04、open-vm-tools、build-essential、vim、openssh-server 等均按操作手册安装并验证通过，vim 已能正常创建和保存文件，SSH 22 端口监听正常，窗口缩放分辨率自动适配正常。当前实验环境符合要求，可以继续完成后续实验。
 
 ---
 
