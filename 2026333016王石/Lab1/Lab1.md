@@ -300,16 +300,16 @@ cat hello.txt
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| VMware Tools 版本 | |
-| `open-vm-tools` 是否 active |2:13.0.10-0ubuntu0.24.04.1 |
+| VMware Tools 版本 |13.0.10.0 (build-25056151) |
+| `open-vm-tools` 是否 active |是 |
 | 桌面分辨率是否能自动调整 |是 |
 | `gcc` 版本 |(Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0 |
 | `make` 版本 |GNU Make 4.3 |
-| `gdb` 版本 |15.1-1ubuntu1~24.04.1 |
-| `git` 版本 |1:2.43.0-1ubuntu7.3 |
+| `gdb` 版本 |GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1 |
+| `git` 版本 |2.43.0 |
 | `ssh -V` 的版本信息 |OpenSSH_9.6p1 Ubuntu-3ubuntu13.19, OpenSSL 3.0.13 30 Jan 2024 |
 | 22 端口是否处于监听 |是 |
-| `vim --version` 的版本信息 |2:9.1.0016-1ubuntu7.20 |
+| `vim --version` 的版本信息 |VIM - Vi IMproved 9.1 |
 | `cat hello.txt` 的输出 |操作系统 Lab1 环境验收
 学号：2026333016
 姓名：wangsi
@@ -325,14 +325,14 @@ cat hello.txt
 | 验收项目 | 合格标准 | 你的结论 |
 | :--- | :--- | :--- |
 | VMware 版本 | VMware Workstation Pro 26H1 for Windows |VMware® Workstation Pro 26H1 |
-| Linux 版本 | Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 |Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4	 |
-| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 |具有 IP 和默认路由，IP 联通与 DNS 解析正常	 |
-| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） |sudo apt update 成功，没有 Err 或 Failed（使用官方源或国内镜像站均可） |
-| CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 |至少 2 核、4GB、40GB，且与宿主机档位匹配 |
-| C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） |gcc、make、gdb、git 已安装并能输出版本信息（本次不编译程序）	 |
-| vim | `vim --version` 显示完整版，且能用它创建并保存 `hello.txt` |vim --version 显示完整版，且能用它创建并保存 hello.txt	 |
-| OpenSSH Server | `openssh-server` 已安装，`ssh -V` 有版本信息，22 端口处于监听 |openssh-server 已安装，ssh -V 有版本信息，22 端口处于监听	 |
-| VMware Tools | 软件包已安装，`open-vm-tools` 为 active，窗口缩放分辨率自动适配 |软件包已安装，open-vm-tools 为 active，窗口缩放分辨率自动适配	 |
+| Linux 版本 |Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 | 合格 |
+| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 |合格	 |
+| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） |合格 |
+| CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 |合格 |
+| C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） |合格	 |
+| vim | `vim --version` 显示完整版，且能用它创建并保存 `hello.txt` |合格 |
+| OpenSSH Server | `openssh-server` 已安装，`ssh -V` 有版本信息，22 端口处于监听 |openssh-server 已安装，ssh -V 有版本信息，22 端口已处于监听状态	 |
+| VMware Tools | 软件包已安装，`open-vm-tools` 为 active，窗口缩放分辨率自动适配 |软件包已安装，open-vm-tools 为 active，窗口缩放分辨率竜自动适配	 |
 
 简要说明你遇到的问题、解决方法，以及当前环境是否可以继续完成后续实验：
 
