@@ -1,7 +1,7 @@
 ﻿# 操作系统 Lab1 实验报告
 ## 任务一：VMware 与 Ubuntu 环境安装
 - VMware Workstation Pro 完整版本号：17.6.2 build-24409262
-- Ubuntu 系统版本：Ubuntu 24.04.1 LTS (Noble Numbat)
+- Ubuntu 系统版本：Ubuntu 24.04.4 LTS (Noble Numbat)
 - 内核版本信息：Linux 6.8.0-31-generic x86_64
 - 对应版本截图：imgs/lab1_vmware_version.png、imgs/lab1_ubuntu_version.png
 ## 任务二：虚拟机网络配置
@@ -26,3 +26,4 @@
 - openssh-server 服务状态：active (running)，可正常远程连接
 - 剪贴板共享、自适应分辨率功能已正常生效
 ## 提交人：2026333007薛彭辉
+
