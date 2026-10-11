@@ -109,7 +109,7 @@ ping -c 4 mirrors.tuna.tsinghua.edu.cn
 ### 第五步：确认软件包索引可以更新
 
 ```bash
-sudo apt upduate
+sudo apt update
 ```
 
 期望看到若干 `Get:` 行，最后显示读取完成，并且没有 `Err:`、`Failed` 或 `Could not resolve` 之类的错误。
